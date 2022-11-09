@@ -31,12 +31,11 @@ function createCoordinates(positionStr) {
 		const coordFloat = parseFloat(coordStr);
 
 		// To account transform / translate
-		const offset = coordFloat > 1 ? 1 : 0;
 		const direction = index === 0
 			? 1 
 			: -1;
 
-		const translateValue = (width * (coordFloat - 0)) * direction;
+		const translateValue = (width * (coordFloat)) * direction;
 
 		return `${translateValue}%`
 	})

@@ -67,5 +67,5 @@ test('Correct command moves robot', async () => {
   await user.click(button);
 
 
-  await waitFor(() => expect(robot).toHaveStyle('transform: translate(100%,-100%)'));
+  await waitFor(() => expect(robot).toHaveStyle('transform: translate(200%,-100%)'));
 })
