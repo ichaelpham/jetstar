@@ -1,8 +1,7 @@
 # Assumptions
-- I've assumed that the place command has to be typed out in full in order for the robot to move
-- I've also assumed each place command is relative from the 0,0 coordinte and not relative to the current / previous position of the robot
-
-
+- I've assumed that the `place(int,int)` command has to be typed out in full in order for the robot to move
+- I've also assumed each place command is relative from the 0,0 coordinate and not relative to the current / previous position of the robot
+  - Eg: if the robot is in coordinate 1,1, `place(1,1)` will not move it anywhere
 
 
 
