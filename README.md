@@ -1,3 +1,11 @@
+# Assumptions
+- I've assumed that the place command has to be typed out in full in order for the robot to move
+- I've also assumed each place command is relative from the 0,0 coordinte and not relative to the current / previous position of the robot
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
