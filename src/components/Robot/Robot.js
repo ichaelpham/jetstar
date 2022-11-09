@@ -10,7 +10,6 @@ export const Robot = (props) => {
 	return (
 		<RobotCell $position={position}>
 			Robot
-			{position}
 		</RobotCell>
 	)
 }

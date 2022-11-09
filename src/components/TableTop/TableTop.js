@@ -29,14 +29,10 @@ export const TableTop = () => {
 
 					<Robot
 						position={position}
-						rowLimit={rowLimit}
-						colLimit={colLimit}
 					/>
 				</Table>
 
 				<CommandInput
-					rowLimit={rowLimit}
-					colLimit={colLimit}
 					setPosition={setPosition}
 				/>
 			</Inner>

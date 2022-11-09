@@ -7,8 +7,6 @@ export const CommandInput = (props) => {
 
 	const {
 		setPosition,
-		rowLimit = 5,
-		colLimit = 5
 	} = props;
 
 	/**
@@ -33,12 +31,12 @@ function createCoordinates(positionStr) {
 		const coordFloat = parseFloat(coordStr);
 
 		// To account transform / translate
-		const offset = coordFloat > 1 ? 1 : 0	;
+		const offset = coordFloat > 1 ? 1 : 0;
 		const direction = index === 0
 			? 1 
 			: -1;
 
-		const translateValue = (width * (coordFloat - offset)) * direction;
+		const translateValue = (width * (coordFloat - 0)) * direction;
 
 		return `${translateValue}%`
 	})
@@ -49,7 +47,7 @@ function createCoordinates(positionStr) {
 	const handleSubmit = () => {
 		// Check if string contains `place(xx)`;
 		// TO-DO: use row / col limits in regex if possible
-		const regExp = /place\(([0-5]+(,[0-5]+))\)/;
+		const regExp = /place\(([0-4]+(,[0-4]+))\)/;
 		const matches = regExp.exec(command);
 
 		if(matches?.[1]) {
